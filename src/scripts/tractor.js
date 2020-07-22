@@ -8,7 +8,7 @@ import { addPlant } from "./field.js"
 
 
 export const plantSeeds = (plan) => {
-    let planted = []
+    let planted = ""
 
     for (const row of plan) {
         for (const seed of row) {
