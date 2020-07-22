@@ -1,8 +1,13 @@
 
 let plantsInField = [] 
 export const addPlant = (seedObj) => {
-    
-plantsInField.push(seedObj)
+    if(Array.isArray(seedObj)) {
+    for (const seed of seedObj) {
+
+plantsInField.push(seed)
+    }
+    }
+    plantsInField.push(seedObj)
 
 }
 export const usePlants = () => {

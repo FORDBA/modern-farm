@@ -8,10 +8,10 @@ import { addPlant } from "./field.js"
 
 
 export const plantSeeds = (plan) => {
-    let planted = ""
+    let planted = []
 
     for (const row of plan) {
-        for (seed of row) {
+        for (const seed of row) {
             if (seed === "Asparagus") {
                 planted = createAsparagus()
             }
